@@ -1,5 +1,5 @@
 services:
-  # Option 1: Render Web Service (SSR Node Service)
+  # Option 1: Render Web Service (Universal Vite Preview Host)
   - type: web
     name: aceforge-arena
     env: node
@@ -11,8 +11,6 @@ services:
         value: 20.11.0
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 10000
 
   # Option 2: Render Static Site (Edge Static CDN)
   - type: static
