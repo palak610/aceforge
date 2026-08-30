@@ -9,7 +9,6 @@
     "postbuild": "node -e \"import fs from 'node:fs'; fs.mkdirSync('.output/server', {recursive:true}); fs.copyFileSync('start-server.mjs', '.output/server/index.mjs');\"",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
-    "prestart": "vite build",
     "start": "node start-server.mjs",
     "lint": "eslint .",
     "format": "prettier --write ."
